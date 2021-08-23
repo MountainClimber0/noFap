@@ -122,3 +122,16 @@ a {
   line-height: 21px;
   padding-top: 4.875rem;
 }
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20.625rem;
+  height: 3.125rem;
+  margin: 50px auto;
+  background-color: #ed5353;
+  color: white;
+  font-family: arial;
+  position: relative;
+  border-radius: 5px;
+}

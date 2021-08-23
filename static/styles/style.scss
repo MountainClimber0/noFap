@@ -13,6 +13,12 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+label {
+  font-size: 1.25rem;
+  opacity: 0.6;
+}
+
 .conteiner {
   text-align: center;
 }
@@ -24,24 +30,47 @@ body {
   flex-direction: column;
   gap: 1.17rem;
   align-items: center;
-  input {
-    height: 2.9375rem;
-    width: 19.75rem;
-    text-indent: 20px;
-    font-size: 1.25rem;
-    &::placeholder {
-      font-size: 1.25rem;
-      opacity: 0.6;
-      padding: 15px 0px;
-      transition: 0.3s ease;
-    }
-    &:focus::placeholder {
+
+  .input-box {
+    position: relative;
+
+    label {
       position: absolute;
-      font-size: 10px;
-      transform: translateY(-13px);
+
+      left: 21px;
+      top: 15px;
+
+      transition: 0.2s;
     }
   }
+
+  input {
+    width: 19.75rem;
+
+    padding: 16px 0 11px;
+
+    text-indent: 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+    &:focus ~ label {
+      font-size: 10px;
+      transform: translateY(-8px);
+    }
+  }
+
+  .entrar:hover {
+    filter: brightness(0.95);
+  }
 }
+
+.active {
+  ~ label {
+    font-size: 10px;
+    transform: translateY(-8px);
+  }
+}
+
 .esqSenha {
   position: relative;
 
@@ -67,6 +96,10 @@ body {
   border-radius: 29px;
   &:hover {
     cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.8;
   }
 }
 .registro {

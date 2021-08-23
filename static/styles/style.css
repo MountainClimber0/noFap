@@ -7,11 +7,25 @@
 body {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  font-size: 1.25rem;
+  opacity: 0.6;
 }
 
 .conteiner {
@@ -23,63 +37,72 @@ body {
 }
 
 .placeholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1.17rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.placeholder .input-box {
+  position: relative;
+}
+
+.placeholder .input-box label {
+  position: absolute;
+  left: 21px;
+  top: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .placeholder input {
-  height: 2.9375rem;
   width: 19.75rem;
+  padding: 16px 0 11px;
   text-indent: 20px;
   font-size: 1.25rem;
+  font-weight: 400;
 }
-.placeholder input::-moz-placeholder {
-  font-size: 1.25rem;
-  opacity: 0.6;
-  padding: 15px 0px;
-  -moz-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-.placeholder input:-ms-input-placeholder {
-  font-size: 1.25rem;
-  opacity: 0.6;
-  padding: 15px 0px;
-  -ms-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-.placeholder input::placeholder {
-  font-size: 1.25rem;
-  opacity: 0.6;
-  padding: 15px 0px;
-  transition: 0.3s ease;
-}
-.placeholder input:focus::-moz-placeholder {
-  position: absolute;
+
+.placeholder input:focus ~ label {
   font-size: 10px;
-  transform: translateY(-13px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
-.placeholder input:focus:-ms-input-placeholder {
-  position: absolute;
-  font-size: 10px;
-  transform: translateY(-13px);
+
+.placeholder .entrar:hover {
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
 }
-.placeholder input:focus::placeholder {
-  position: absolute;
+
+.active ~ label {
   font-size: 10px;
-  transform: translateY(-13px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .esqSenha {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 6px;
   padding-bottom: 1.438rem;
 }
+
 .esqSenha a {
   color: #a4a4a4;
 }
+
 .esqSenha :link {
   text-decoration: none;
 }
@@ -93,8 +116,13 @@ body {
   border: none;
   border-radius: 29px;
 }
+
 .entrar:hover {
   cursor: pointer;
+}
+
+.entrar:disabled {
+  opacity: 0.8;
 }
 
 .registro {
@@ -106,6 +134,7 @@ a {
   color: #80aaea;
   text-decoration: none;
 }
+
 .reglink:hover,
 a:hover {
   cursor: pointer;
@@ -119,4 +148,5 @@ a:hover {
   font-size: 14px;
   line-height: 21px;
   padding-top: 4.875rem;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

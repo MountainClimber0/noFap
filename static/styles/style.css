@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.conteiner {
+  text-align: center;
+}
+
+.logo {
+  padding-bottom: 6.25rem;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 1.17rem;
+  align-items: center;
+}
+.placeholder input {
+  height: 2.9375rem;
+  width: 19.75rem;
+  text-indent: 20px;
+  font-size: 1.25rem;
+}
+.placeholder input::-moz-placeholder {
+  font-size: 1.25rem;
+  opacity: 0.6;
+  padding: 15px 0px;
+  -moz-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.placeholder input:-ms-input-placeholder {
+  font-size: 1.25rem;
+  opacity: 0.6;
+  padding: 15px 0px;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.placeholder input::placeholder {
+  font-size: 1.25rem;
+  opacity: 0.6;
+  padding: 15px 0px;
+  transition: 0.3s ease;
+}
+.placeholder input:focus::-moz-placeholder {
+  position: absolute;
+  font-size: 10px;
+  transform: translateY(-13px);
+}
+.placeholder input:focus:-ms-input-placeholder {
+  position: absolute;
+  font-size: 10px;
+  transform: translateY(-13px);
+}
+.placeholder input:focus::placeholder {
+  position: absolute;
+  font-size: 10px;
+  transform: translateY(-13px);
+}
+
+.esqSenha {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 6px;
+  padding-bottom: 1.438rem;
+}
+.esqSenha a {
+  color: #a4a4a4;
+}
+.esqSenha :link {
+  text-decoration: none;
+}
+
+.entrar {
+  font-size: 1.375rem;
+  color: white;
+  background-color: #0f83ad;
+  width: 19.75rem;
+  height: 3.125rem;
+  border: none;
+  border-radius: 29px;
+}
+.entrar:hover {
+  cursor: pointer;
+}
+
+.registro {
+  padding-top: 2.063rem;
+}
+
+.reglink,
+a {
+  color: #80aaea;
+  text-decoration: none;
+}
+.reglink:hover,
+a:hover {
+  cursor: pointer;
+}
+
+.priv {
+  opacity: 0.5;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 4.875rem;
+}/*# sourceMappingURL=style.css.map */

@@ -115,6 +115,8 @@ label {
   height: 3.125rem;
   border: none;
   border-radius: 29px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .entrar:hover {

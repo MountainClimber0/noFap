@@ -64,10 +64,6 @@ button:hover {
       transform: translateY(-8px);
     }
   }
-
-  .entrar:hover {
-    filter: brightness(0.95);
-  }
 }
 
 .active {
@@ -100,12 +96,16 @@ button:hover {
   height: 3.125rem;
   border: none;
   border-radius: 29px;
+
+  transition: 0.2s;
   &:hover {
     cursor: pointer;
+    filter: brightness(0.95);
   }
 
   &:disabled {
     opacity: 0.8;
+    cursor: not-allowed;
   }
 }
 .registro {

@@ -8,8 +8,6 @@
 body {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
   -webkit-box-align: center;
@@ -29,6 +27,14 @@ label {
   opacity: 0.6;
 }
 
+button {
+  border: none;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
 .conteiner {
   text-align: center;
 }
@@ -38,8 +44,6 @@ label {
 }
 
 .placeholder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -48,21 +52,18 @@ label {
   gap: 1.17rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
+
   align-items: center;
 }
-
 .placeholder .input-box {
   position: relative;
 }
-
 .placeholder .input-box label {
   position: absolute;
   left: 21px;
   top: 15px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .placeholder input {
   width: 19.75rem;
   padding: 16px 0 11px;
@@ -70,13 +71,11 @@ label {
   font-size: 1.25rem;
   font-weight: 400;
 }
-
 .placeholder input:focus ~ label {
   font-size: 10px;
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
-
 .placeholder .entrar:hover {
   -webkit-filter: brightness(0.95);
   filter: brightness(0.95);
@@ -90,8 +89,6 @@ label {
 
 .esqSenha {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -99,11 +96,9 @@ label {
   padding-top: 6px;
   padding-bottom: 1.438rem;
 }
-
 .esqSenha a {
   color: #a4a4a4;
 }
-
 .esqSenha :link {
   text-decoration: none;
 }
@@ -119,13 +114,11 @@ label {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .entrar:hover {
   cursor: pointer;
   -webkit-filter: brightness(0.95);
   filter: brightness(0.95);
 }
-
 .entrar:disabled {
   opacity: 0.8;
   cursor: not-allowed;
@@ -140,7 +133,6 @@ a {
   color: #80aaea;
   text-decoration: none;
 }
-
 .reglink:hover,
 a:hover {
   cursor: pointer;

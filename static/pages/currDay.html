@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
     <title>Document</title>
+    <link rel="icon" href="../image/logo-fav.png" type="image/png" />
   </head>
   <body>
     <div class="conteiner">
@@ -30,17 +31,20 @@
         <div class="points">
           <p>Estou com 120 pt.</p>
         </div>
+      </section>
+      <!-- End of current day -->
 
-        <!-- Faces Section -->
-        <section class="colored-faces">
+      <!-- Faces Section -->
+      <section class="colored-faces">
+        <form>
           <button>
-            <img src="../image/greenFace.png" alt="" id="blue" />
+            <img src="../image/greenFace.png" alt="" id="green" />
           </button>
           <button>
             <img src="../image/yellowFace.png" alt="" id="yellow" />
           </button>
           <button>
-            <img src="../image/blueFace.png" alt="" id="green" />
+            <img src="../image/blueFace.png" alt="" id="blue" />
           </button>
 
           <button>
@@ -49,18 +53,23 @@
           <button>
             <img src="../image/redFace.png" alt="" id="red" />
           </button>
-        </section>
-        <!-- Description boxes Section -->
-        <section class="descrBoxes">
-          <div id="triangulo"></div>
-        </section>
+
+          <!-- Description boxes Section -->
+          <section class="descrBoxes">
+            <div id="triangulo"></div>
+          </section>
+
+          <!-- Confirm button -->
+          <div>
+            <button class="confirm"><h2>confirmar</h2></button>
+          </div>
+        </form>
       </section>
-      <!-- End of current day -->
-      <!-- Confirm button -->
-      <div>
-        <button class="confirm"><h2>confirmar</h2></button>
-      </div>
     </div>
+
+    <script src="../JS/authenticated.js"></script>
     <script src="../JS/date.js"></script>
+    <script src="../JS//currentDay.js"></script>
+
   </body>
 </html>

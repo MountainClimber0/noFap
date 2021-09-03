@@ -1,5 +1,5 @@
-const auth = localStorage.getItem("auth");
+const userName = localStorage.getItem("auth");
 
-if (!auth) {
+if (!userName) {
   window.location.replace("login.html");
 }

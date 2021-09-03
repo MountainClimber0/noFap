@@ -28,5 +28,5 @@ form.onsubmit = async (e) => {
   }
 
   localStorage.setItem("auth", user.name);
-  location.replace("index.html");
+  location.replace("currDay.html");
 };

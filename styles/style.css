@@ -16,7 +16,7 @@ button {
 
 button:hover {
   -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 .conteiner {
@@ -33,7 +33,7 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   position: absolute;
   right: 0;
   height: 400px;
@@ -41,13 +41,13 @@ nav ul {
   top: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
@@ -66,19 +66,19 @@ nav ul li a {
 
 .nav-active {
   -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
     -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
@@ -86,19 +86,19 @@ nav ul li a {
   from {
     opacity: 0;
     -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 .toggle .line-top {
   background-color: white;
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -106,7 +106,7 @@ nav ul li a {
 .toggle .line-bot {
   background-color: white;
   -webkit-transform: rotate(45deg) translate(-10px, 5px);
-          transform: rotate(45deg) translate(-10px, 5px);
+  transform: rotate(45deg) translate(-10px, 5px);
   width: 100%;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -118,12 +118,12 @@ nav ul li a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 1.17rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .placeholder .input-box {
@@ -149,13 +149,13 @@ nav ul li a {
 .placeholder input:focus ~ label {
   font-size: 10px;
   -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .active ~ label {
   font-size: 10px;
   -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .esqSenha {
@@ -164,8 +164,8 @@ nav ul li a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding-top: 6px;
   padding-bottom: 1.438rem;
 }
@@ -193,7 +193,7 @@ nav ul li a {
 .entrar:hover {
   cursor: pointer;
   -webkit-filter: brightness(0.95);
-          filter: brightness(0.95);
+  filter: brightness(0.95);
 }
 
 .entrar:disabled {
@@ -231,8 +231,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .logoHeader {
@@ -272,11 +272,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 9.625rem;
   padding-left: 20px;
   -webkit-transition: 0.8s ease;
@@ -324,14 +324,14 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 22.6rem;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 23.6rem;
   height: 5.125rem;
-  margin: 21px 0;
+  margin: 21px auto;
   color: white;
   font-family: arial;
   font-size: 15px;
@@ -339,10 +339,6 @@ a:hover {
   border-radius: 5px;
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
-}
-
-#triangulo p {
-  padding: 5px 15px;
 }
 
 #triangulo::before {
@@ -413,11 +409,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 22.688rem;
   height: 3.125rem;
   margin: 50px auto;

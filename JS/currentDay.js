@@ -48,7 +48,7 @@ btnConfirm.onclick = async () => {
     day,
   };
 
-  const response = await fetch("http://localhost:3333/api/day", {
+  const response = await fetch("https://nofap-api.herokuapp.com/api/day", {
     method: "POST",
     mode: "cors",
     headers: {

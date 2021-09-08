@@ -17,7 +17,7 @@ function renderCalendar() {
     currentDate[0].toUpperCase() + currentDate.slice(1);
 
   // Calendar
-
+  const currDate = date.getDate();
   const firstDate = date;
   firstDate.setDate(1);
   const firstDateIndex = firstDate.getDay();
@@ -46,7 +46,7 @@ function renderCalendar() {
       day.classList.add(`${dayGetted.color}-day`);
     }
 
-    if (i === date.getDate()) {
+    if (i === currDate) {
       day.classList.add(`current-day`);
     }
 

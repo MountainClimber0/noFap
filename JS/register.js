@@ -12,7 +12,7 @@ form.onsubmit = async (e) => {
 
   console.log(user);
 
-  const res = await fetch("http://localhost:3333/api/register", {
+  const res = await fetch("https://nofap-api.herokuapp.com/api/register", {
     method: "POST",
     headers: {
       Accept: "application/json",

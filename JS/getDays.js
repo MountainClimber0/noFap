@@ -1,8 +1,8 @@
-let days = undefined;
+let days = [];
 
 window.onload = async () => {
   const response = await fetch(
-    `http://localhost:3333/api/calendar/${userName}`,
+    `https://nofap-api.herokuapp.com/api/calendar/${userName}`,
     {
       method: "GET",
       mode: "cors",

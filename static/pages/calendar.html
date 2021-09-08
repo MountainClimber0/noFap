@@ -6,14 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nofap | Calendar</title>
     <link rel="stylesheet" href="../styles/calendar.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="icon" href="../image/logo-fav.png" type="image/png" />
   </head>
   <body>
     <div class="conteiner">
-      <header class="page-header">
-        <img id="logo" src="../image/logo.svg" alt="Logo Nofap" />
-        <button><img src="../image/Hamburger.svg" alt="" /></button>
-      </header>
+      <!-- Header-->
+      <section class="header">
+        <div class="logoHeader">
+          <img src="../image/logo2.png" alt="" />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="currDay.html">Current day</a></li>
+            <li><a href="calendar.html">Calendario</a></li>
+            <li><a href="rank.html">Rank</a></li>
+            <li><a href="login.html">Log out</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon-holder">
+          <div class="menu-icon-holder-lines">
+            <div class="line-top"></div>
+            <div class="line-bot"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End of header -->
       <main>
         <section class="date">
           <h2>Setembro 2021</h2>
@@ -34,9 +52,10 @@
         </section>
       </main>
     </div>
-
+    <script src="../JS/nav.js"></script>
     <script src="../JS/authenticated.js"></script>
     <script src="../JS/getDays.js"></script>
     <script src="../JS/calendar.js"></script>
+    
   </body>
 </html>
